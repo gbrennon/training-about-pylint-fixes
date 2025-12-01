@@ -1,6 +1,7 @@
-def main():
-    print("Hello from empty-dir!")
+from fastapi import FastAPI
 
+app = FastAPI()
 
-if __name__ == "__main__":
-    main()
+@app.get("/ping")
+async def ping():
+    return {"message": "pong"}
