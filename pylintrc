@@ -1,0 +1,10 @@
+[MASTER]
+jobs=0
+extension-pkg-whitelist=docparams,typing
+persistent=no
+
+[FORMAT]
+max-line-length=100
+
+[TYPECHECK]
+generated-members=
