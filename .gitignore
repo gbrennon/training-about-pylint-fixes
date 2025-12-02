@@ -26,7 +26,7 @@ venv
 *.po
 *.pot
 *.msg
-*.py
+# *.py  # Commented out to allow tracking Python source files
 *.sh
 *.md
 *.txt
