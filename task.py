@@ -1,5 +1,5 @@
 """
-Module for Task class
+Module for task class
 """
 
 class Task:
@@ -9,7 +9,7 @@ class Task:
 
     def __init__(self, task_id, description, completed=False):
         """
-        Initialize a new Task instance.
+        Initialize a new task instance.
 
         Args:
             task_id (int): Unique identifier for the task.
@@ -33,4 +33,6 @@ class Task:
         Returns:
             str: Formatted task details.
         """
-        return f"Task({self.task_id}): {self.description} [{'Completed' if self.completed else 'Pending'}]"
+        details = f"task({self.task_id}): {self.description}"
+        status = 'Completed' if self.completed else 'Pending'
+        return f"{details} [{status}]"
